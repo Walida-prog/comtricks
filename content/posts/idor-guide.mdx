@@ -1,0 +1,27 @@
+---
+title: "IDOR : détecter avec Burp Suite"
+description: "Guide complet bug bounty sur les vulnérabilités IDOR"
+date: "2026-06-01"
+tags: ["pentest", "bug-bounty", "idor"]
+---
+
+## Introduction
+
+Les **IDOR** (Insecure Direct Object Reference) sont
+parmi les bugs les mieux payés sur HackerOne.
+
+## Étape 1 : Configurer Burp Suite
+
+Activez le proxy sur `127.0.0.1:8080` et interceptez
+les requêtes de votre navigateur.
+
+## Étape 2 : Repérer les IDs
+
+Cherchez dans Burp tout identifiant numérique dans les URLs :
+
+- `/api/invoices/1042`
+- `/user/profile?id=5583`
+
+## Conclusion
+
+Bonne chasse sur HackerOne et YesWeHack !
