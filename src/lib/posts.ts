@@ -1,7 +1,6 @@
-// src/lib/posts.ts
-import fs          from 'fs'
-import path        from 'path'
-import matter      from 'gray-matter'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import readingTime from 'reading-time'
 
 const POSTS_DIR = path.join(process.cwd(), 'content/posts')
@@ -23,9 +22,7 @@ export function getAllPosts(): Post[] {
   return files
     .map(filename => {
       const slug = filename.replace(/\.mdx$/, '')
-      const raw  = fs.readFileSync(
-        path.join(POSTS_DIR, filename), 'utf-8'
-      )
+      const raw = fs.readFileSync(path.join(POSTS_DIR, filename), 'utf-8')
       const { data, content } = matter(raw)
       return {
         slug,
