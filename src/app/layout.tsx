@@ -7,12 +7,16 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://comtricks.com'),
+  metadataBase: new URL('https://comtricks.vercel.app'),
   title: {
     default: 'ComTricks',
     template: '%s | ComTricks',
   },
-  description: 'Pentest · Bug Bounty · Write-ups CTF',
+  description: 'Pentest - Bug Bounty - Write-ups CTF',
+
+  verification: {
+    google: 'FsyHxGTkTeIDJkAgnhFRJQ7ZpqTemfRsnld6BCdT0Es',
+  },
 }
 
 export default function RootLayout({
