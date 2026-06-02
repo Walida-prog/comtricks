@@ -27,6 +27,7 @@ export async function generateMetadata({
       description:   post.description,
       type:          'article',
       publishedTime: post.date,
+      url:           `https://comtricks.vercel.app/blog/${slug}`,
     },
   }
 }
