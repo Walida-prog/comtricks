@@ -11,6 +11,9 @@ export default function Navbar() {
           <Link href="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
             Blog
           </Link>
+          <Link href="/writeups" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            Write-ups
+          </Link>
           <Link href="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
             A propos
           </Link>
